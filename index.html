@@ -1,61 +1,118 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessandro Carnevali - Benvenuto</title>
+    <meta name="description" content="Sito personale di Alessandro Carnevali - Studente, atleta e appassionato di informatica">
+    <title>Alessandro Carnevali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            padding: 60px 20px;
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
         }
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        a.button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #ffffff;
-            color: #1e3c72;
+        nav a {
+            color: #fff;
+            margin-left: 1.5rem;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
         }
-        a.button:hover {
-            background-color: #e0e0e0;
+        nav a.active {
+            border-bottom: 2px solid #1abc9c;
+        }
+        .hero {
+            background: linear-gradient(to right, #1abc9c, #16a085);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 1rem;
         }
         footer {
-            margin-top: 60px;
-            font-size: 0.9em;
-            opacity: 0.6;
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .contact-icons {
+            margin-top: 0.5rem;
+        }
+        .contact-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Benvenuto nel mio sito!</h1>
-        <p>Sono Alessandro Carnevali, studente di Informatica all'IIS Marconi Pieralisi di Jesi. Mi appassionano la programmazione, l'intelligenza artificiale e lo sviluppo di applicazioni moderne.</p>
-        <a href="#contatti" class="button">Contattami</a>
+        <h1>Alessandro Carnevali</h1>
+        <nav>
+            <a href="#" class="active">🏠 Presentazione</a>
+            <a href="#pcto">🎓 PCTO</a>
+            <a href="#sport">⚽ Studente-Atleta</a>
+            <a href="#materie">📚 Materie</a>
+            <a href="#civica">🌍 Educazione Civica</a>
+        </nav>
     </header>
 
-    <footer>
-        &copy; 2025 Alessandro Carnevali - Tutti i diritti riservati
-    </footer>
+    <div class="hero">
+        <img src="tuafoto.jpg" alt="Foto di Alessandro Carnevali">
+        <h2>Benvenuti nel mio sito personale</h2>
+        <p>Studente, atleta e appassionato di tecnologia</p>
+    </div>
 
+    <section id="chisono">
+        <h2>Chi sono</h2>
+        <p>Mi chiamo Alessandro Carnevali, ho 19 anni e frequento l'IIS Marconi Pieralisi a Jesi, indirizzo Informatica. Oltre alla scuola, pratico sport a livello agonistico e coltivo una grande passione per la programmazione e le tecnologie emergenti.</p>
+        <p>Nel tempo libero mi piace approfondire tematiche legate al mondo IT, partecipare a progetti scolastici, e lavorare su piccoli progetti personali, anche in ambito web e app development.</p>
+        <p>I miei obiettivi futuri includono il proseguimento degli studi in Informatica presso l'Università di Camerino e lo sviluppo di soluzioni software utili nella vita reale.</p>
+    </section>
+
+    <section id="competenze">
+        <h2>Competenze</h2>
+        <ul>
+            <li><strong>Linguaggi:</strong> HTML, CSS, JavaScript, PHP, SQL, C#, Python</li>
+            <li><strong>Lingue straniere:</strong> Inglese (B2), Spagnolo (scolastico)</li>
+            <li><strong>Soft skills:</strong> Problem solving, teamwork, comunicazione, gestione del tempo</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>📧 alessandrocarnevali785@gmail.com | 📞 334 3364279</p>
+        <div class="contact-icons">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+        <p>&copy; 2025 Alessandro Carnevali - Tutti i diritti riservati</p>
+    </footer>
 </body>
 </html>
